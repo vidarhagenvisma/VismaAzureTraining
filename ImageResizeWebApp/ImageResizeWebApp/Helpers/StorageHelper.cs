@@ -27,7 +27,7 @@ namespace ImageResizeWebApp.Helpers
             return formats.Any(item => file.FileName.EndsWith(item, StringComparison.OrdinalIgnoreCase));
         }
 
-        public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureStorageConfig _storageConfig)
+        public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureConfig _storageConfig)
         {
             // Create storagecredentials object by reading the values from the configuration (appsettings.json)
             StorageCredentials storageCredentials = new StorageCredentials(_storageConfig.AccountName, _storageConfig.AccountKey);
@@ -50,7 +50,7 @@ namespace ImageResizeWebApp.Helpers
             return await Task.FromResult(true);
         }
 
-        public static async Task<List<string>> GetThumbNailUrls(AzureStorageConfig _storageConfig)
+        public static async Task<List<string>> GetThumbNailUrls(AzureConfig _storageConfig)
         {
             List<string> thumbnailUrls = new List<string>();
 

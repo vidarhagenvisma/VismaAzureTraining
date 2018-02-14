@@ -24,7 +24,7 @@ namespace ImageResizeWebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
-            services.Configure<AzureStorageConfig>(Configuration.GetSection("AzureStorageConfig"));
+            services.Configure<AzureConfig>(Configuration.GetSection("AzureStorageConfig"));
             services.AddMvc();
 
         }

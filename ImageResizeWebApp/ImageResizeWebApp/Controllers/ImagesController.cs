@@ -21,9 +21,9 @@ namespace ImageResizeWebApp.Controllers
     public class ImagesController : Controller
     {
         // make sure that appsettings.json is filled with the necessary details of the azure storage
-        private readonly AzureStorageConfig storageConfig = null;
+        private readonly AzureConfig storageConfig = null;
 
-        public ImagesController(IOptions<AzureStorageConfig> config)
+        public ImagesController(IOptions<AzureConfig> config)
         {
             storageConfig = config.Value;
         }
