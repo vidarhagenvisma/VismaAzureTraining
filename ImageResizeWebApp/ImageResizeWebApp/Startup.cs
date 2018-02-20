@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ImageResizeWebApp.Models;
+using ImageResizeWebApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace ImageResizeWebApp
 {
@@ -23,8 +25,15 @@ namespace ImageResizeWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var config = new AzureConfig();
+            var sqlConfig = config.SQLConnectionString;
+
             services.AddOptions();
             services.Configure<AzureConfig>(Configuration.GetSection("AzureStorageConfig"));
+            services.AddDbContext<UploadHistoryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SQLConnectionString")));
+
+
+
             services.AddMvc();
 
         }
