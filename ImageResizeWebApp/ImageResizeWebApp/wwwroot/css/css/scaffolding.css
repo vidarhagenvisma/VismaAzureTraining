@@ -1,0 +1,35 @@
+/*
+ * Scaffolding - Nordic Cool 3.0
+ */
+html,
+body {
+  height: 100%;
+}
+body,
+label,
+button,
+a,
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  position: relative;
+  /* For scrollyspy */
+  background: #ebebeb;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+}
+img:not([alt]) {
+  border: 1px solid #ebb972;
+}
+/* Footer */
+footer {
+  clear: both;
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+footer img {
+  margin: 0 7px;
+  vertical-align: bottom;
+}

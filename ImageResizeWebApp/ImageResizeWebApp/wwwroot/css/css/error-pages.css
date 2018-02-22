@@ -1,0 +1,28 @@
+.errorPage-container {
+  display: flex;
+  height: 88vh;
+  align-items: center;
+  justify-content: center;
+}
+.errorPage-container .error-page {
+  margin-top: -10%;
+  align-items: center;
+  display: flex;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.errorPage-container .error-page-content {
+  padding: 0 20px 0 50px;
+}
+@media (max-width: 768px) {
+  .errorPage-container .error-page {
+    max-width: 95%;
+    display: block;
+    text-align: center;
+  }
+  .errorPage-container .error-page .error-page-content {
+    padding: 0 20px;
+  }
+}

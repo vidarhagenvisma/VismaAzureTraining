@@ -1,0 +1,90 @@
+ /*
+ * Badges / Labels - Nordic Cool 3.0
+ */
+ 
+@import url("_variables.less");
+@import url("_mixins.less");
+ 
+.badge, .label {
+	display: inline-block;
+	min-width: 22px;
+	height: 21px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	text-indent: 0px;
+	border: 0;
+	padding: 0.3em 0.7em 0.2em;
+	position: relative;
+	vertical-align: middle;
+	
+	.border-radius(15px);
+	.badge-default-bg();
+	}
+
+.badge { padding-top: 0.4em; }
+
+.badge-default,
+.label-default,
+.badge-success,
+.label-success { .badge-default-bg(); }
+	
+.badge-primary,
+.label-primary { .badge-primary-bg(); }
+	
+.badge-danger,
+.label-danger,
+.badge-secondary,
+.label-secondary { .badge-secondary-bg(); }
+	
+.badge-warning,
+.label-warning { .badge-warning-bg(); }	
+	
+.badge-info,
+.label-info { .badge-info-bg(); }
+
+.badge.badge-sm {
+	min-width: 22px;
+	height: 15px;
+	padding: 0.2em 0.4em 0.1em; 
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 10px;
+	}
+
+h1 .label,
+h1 .badge,
+h2 .label,
+h2 .badge { top: -2px; }	
+
+h3 .label,
+h3 .badge { top: -1px; }
+
+a > {
+	.badge {
+		top: -1px;
+		margin-left: 5px;
+		padding-top: .3em;
+		}
+		
+	.label { margin-left: 5px; }
+	}
+
+.btn .badge,
+.btn .label { top: -2px; }
+
+.btn-primary .badge,
+.btn-primary .label { .badge-primary-bg(); }
+
+.btn-default .badge,
+.btn-default .label { .badge-default-bg(); }
+
+.list-group-item.active > .badge, 
+.nav-pills > .active > a > .badge { color: @base-color; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	//.badge.badge-default:not(.badge-sm) { padding: 0.2em 0.4em 0.2em; }
+
+	.btn .badge { top: -3px; }
+} /* only Chrome */

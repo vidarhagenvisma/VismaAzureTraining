@@ -1,0 +1,46 @@
+/*
+ * Breadcrumb - Nordic Cool 3.0
+ */
+.breadcrumb {
+  background: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.breadcrumb > li {
+  font-size: 14px;
+  font-weight: normal;
+}
+.breadcrumb > li > a:hover {
+  color: #0089d9;
+  text-decoration: underline;
+}
+.breadcrumb > .active {
+  color: #282828;
+}
+.breadcrumb > .disabled a,
+.breadcrumb > .disabled a:hover {
+  color: #a0a0a0;
+  cursor: default;
+}
+.breadcrumb > .disabled a:focus {
+  outline: none !important;
+}
+.breadcrumb > li + li:before {
+  display: inline-block;
+  content: "";
+  position: relative;
+  top: -1px;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px 0 3px;
+  padding: 0;
+  opacity: 0.8;
+  background: url(../img/arrow-small.svg);
+  background-size: 33px 6px;
+  background-position: -13px 0px;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* /.breadcrumb */

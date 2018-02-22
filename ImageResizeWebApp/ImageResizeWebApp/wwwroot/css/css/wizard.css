@@ -1,0 +1,467 @@
+/**
+ * Wizard styles - Nordic Cool 3.0
+*/
+.wizard {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  /* /.wizard ul */
+}
+.wizard ul {
+  display: block;
+  padding-left: 0px;
+  margin-top: 0px;
+  list-style: none;
+  /* /.wizard ul li */
+}
+.wizard ul li {
+  display: block;
+  float: left;
+  cursor: pointer;
+  min-width: 10px;
+  width: 21.61%;
+  height: 50px;
+  margin-left: -13px;
+  padding: 0px 0 0 0;
+  /* /.wizard ul li:not(:first-child):not(:last-child) */
+  /* /.wizard ul li:first-child */
+  /* /.wizard ul li:last-child */
+}
+.childs-11.wizard ul li {
+  width: calc(9.0909% + 9px);
+}
+.childs-11.wizard ul li:last-child {
+  width: 9.0909%;
+}
+.childs-10.wizard ul li {
+  width: calc(10% + 9px);
+}
+.childs-10.wizard ul li:last-child {
+  width: 10%;
+}
+.childs-9.wizard ul li {
+  width: calc(11.1111% + 9px);
+}
+.childs-9.wizard ul li:last-child {
+  width: 11.1111%;
+}
+.childs-8.wizard ul li {
+  width: calc(12.5% + 9px);
+}
+.childs-8.wizard ul li:last-child {
+  width: 12.5%;
+}
+.childs-7.wizard ul li {
+  width: calc(14.2857% + 9px);
+}
+.childs-7.wizard ul li:last-child {
+  width: 14.2857%;
+}
+.childs-6.wizard ul li {
+  width: calc(16.6666% + 9px);
+}
+.childs-6.wizard ul li:last-child {
+  width: 16.6666%;
+}
+.childs-5.wizard ul li {
+  width: calc(20% + 9px);
+}
+.childs-5.wizard ul li:last-child {
+  width: 20%;
+}
+.childs-4.wizard ul li {
+  width: calc(25% + 9px);
+}
+.childs-4.wizard ul li:last-child {
+  width: 25%;
+}
+.childs-3.wizard ul li {
+  width: calc(33.3333% + 9px);
+}
+.childs-3.wizard ul li:last-child {
+  width: 33.3333%;
+}
+.childs-2.wizard ul li {
+  width: calc(50% + 9px);
+}
+.childs-2.wizard ul li:last-child {
+  width: 50%;
+}
+.childs-1.wizard ul li {
+  width: 1000%;
+}
+.wizard ul li a {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  min-width: 10px;
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+  padding: 13px 6px 13px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 125%;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: url(../img/wizard/wizard-inner-backgrounds.png) repeat-x scroll 0 0 transparent;
+  /* /.wizard ul li a:before */
+  /* /.wizard ul li a:after */
+}
+.wizard ul li a::before,
+.wizard ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 13px;
+  height: 50px;
+}
+.wizard ul li a::before {
+  left: -11px;
+  background: url(../img/wizard/wizard-before-backgrounds.png) repeat-x scroll 0 0 transparent;
+}
+.wizard ul li a::after {
+  right: -11px;
+  background: url(../img/wizard/wizard-after-backgrounds.png) repeat-x scroll 0 0 transparent;
+}
+.wizard ul li a span {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.childs-2.wizard ul li:not(:first-child):not(:last-child),
+.childs-3.wizard ul li:not(:first-child):not(:last-child),
+.childs-4.wizard ul li:not(:first-child):not(:last-child),
+.childs-5.wizard ul li:not(:first-child):not(:last-child),
+.childs-6.wizard ul li:not(:first-child):not(:last-child),
+.childs-7.wizard ul li:not(:first-child):not(:last-child),
+.childs-8.wizard ul li:not(:first-child):not(:last-child),
+.childs-9.wizard ul li:not(:first-child):not(:last-child),
+.childs-10.wizard ul li:not(:first-child):not(:last-child),
+.childs-11.wizard ul li:not(:first-child):not(:last-child) {
+  margin-right: 13px;
+  margin-left: -22px;
+}
+.wizard ul li.first {
+  margin-right: 13px;
+  margin-left: 0 !important;
+  /* /.wizard ul li:first-child a */
+}
+.wizard ul li.first a {
+  margin-left: 0 !important;
+  padding-left: 16px;
+  /* /.wizard ul li:first-child a:before */
+}
+.wizard ul li.first a::before {
+  left: 0 !important;
+  width: 5px !important;
+  background: url(../img/wizard/wizard-left-end-backgrounds.png) repeat-x scroll 0 0 transparent;
+}
+.wizard ul li.last {
+  margin-right: 0;
+  margin-left: -22px;
+  /* /.wizard ul li:last-child a */
+}
+.wizard ul li.last a {
+  margin-right: 0px;
+  /* /.wizard ul li:last-child a:after */
+}
+.wizard ul li.last a::after {
+  right: 0 !important;
+  width: 5px !important;
+  background: url(../img/wizard/wizard-right-end-backgrounds.png) repeat-x scroll 0 0 transparent;
+}
+/* /.wizard */
+/* Normal */
+.wizard ul li.normal {
+  /* /.wizard ul li.normal a */
+  /* Normal Hover */
+  /* /.wizard ul li.normal a:hover,.wizard ul li.normal.hover a, */
+}
+.wizard ul li.normal a {
+  z-index: 8;
+  color: #282828;
+}
+.wizard ul li.normal a,
+.wizard ul li.normal a::before,
+.wizard ul li.normal a::after,
+.wizard ul li.normal.first a::before,
+.wizard ul li.normal.last a::after {
+  background-position: 0 0px;
+}
+.wizard ul li.normal a:hover,
+.wizard ul li.normal.hover a {
+  z-index: 8;
+  color: #282828;
+}
+.wizard ul li.normal a:hover,
+.wizard ul li.normal.hover a,
+.wizard ul li.normal a:hover::before,
+.wizard ul li.normal.hover a::before,
+.wizard ul li.normal a:hover::after,
+.wizard ul li.normal.hover a::after,
+.wizard ul li.normal.first a:hover::before,
+.wizard ul li.normal.hover.first a::before,
+.wizard ul li.normal.last a:hover::after,
+.wizard ul li.normal.hover.last a::after {
+  background-position: 0 -60px;
+}
+/* /.wizard ul li.normal */
+/* Focus */
+.wizard ul li.focus:not(.disabled):not(.visited) a,
+.wizard ul li:not(.disabled):not(.visited) a:focus {
+  z-index: 13;
+  outline: none !important;
+  color: #282828;
+}
+.wizard ul li.focus:not(.disabled):not(.visited) a,
+.wizard ul li:not(.disabled):not(.visited) a:focus,
+.wizard ul li.focus:not(.disabled):not(.visited) a::before,
+.wizard ul li:not(.disabled):not(.visited) a:focus::before,
+.wizard ul li.focus:not(.disabled):not(.visited) a::after,
+.wizard ul li:not(.disabled):not(.visited) a:focus::after,
+.wizard ul li.first.focus:not(.disabled):not(.visited) a:before,
+.wizard ul li.first:not(.disabled):not(.visited) a:focus:before,
+.wizard ul li.last.focus:not(.disabled):not(.visited) a:after,
+.wizard ul li.last:not(.disabled):not(.visited) a:focus:after {
+  background-position: 0 -300px;
+}
+/* Focus hover */
+.wizard ul li.focus:not(.disabled):not(.visited) a:hover,
+.wizard ul li:not(.disabled):not(.visited) a:hover:focus,
+.wizard ul li.focus:not(.disabled):not(.visited) a.hover,
+.wizard ul li:not(.disabled):not(.visited) a.hover:focus {
+  z-index: 13;
+  color: #282828;
+}
+.wizard ul li.focus:not(.disabled):not(.visited) a:hover,
+.wizard ul li:not(.disabled):not(.visited) a:hover:focus,
+.wizard ul li.focus:not(.disabled):not(.visited) a.hover,
+.wizard ul li:not(.disabled):not(.visited) a.hover:focus,
+.wizard ul li.focus:not(.disabled):not(.visited) a:hover::before,
+.wizard ul li:not(.disabled):not(.visited) a:hover:focus::before,
+.wizard ul li.focus:not(.disabled):not(.visited) a.hover::before,
+.wizard ul li:not(.disabled):not(.visited) a.hover:focus::before,
+.wizard ul li.focus:not(.disabled):not(.visited) a:hover::after,
+.wizard ul li:not(.disabled):not(.visited) a:hover:focus::after,
+.wizard ul li.focus:not(.disabled):not(.visited) a.hover::after,
+.wizard ul li:not(.disabled):not(.visited) a.hover:focus::after,
+.wizard ul li.first.focus:not(.disabled):not(.visited) a:hover::before,
+.wizard ul li.first:not(.disabled):not(.visited) a:hover:focus::before,
+.wizard ul li.first.focus:not(.disabled):not(.visited) a.hover::before,
+.wizard ul li.first:not(.disabled):not(.visited) a.hover:focus::before,
+.wizard ul li.last.focus:not(.disabled):not(.visited) a:hover::after,
+.wizard ul li.last:not(.disabled):not(.visited) a:hover:focus::after,
+.wizard ul li.last.focus:not(.disabled):not(.visited) a.hover::after,
+.wizard ul li.last:not(.disabled):not(.visited) a.hover:focus::after {
+  background-position: 0 -480px;
+}
+/* Pressed */
+.wizard ul li.normal.pressed a,
+.wizard ul li.normal.pressed a:focus,
+.wizard ul li.normal.focus.pressed a,
+.wizard ul li.normal.focus.pressed a:focus,
+.wizard ul li.active.pressed a,
+.wizard ul li.active.pressed a:focus,
+.wizard ul li.active.focus.pressed:not(.disabled) a,
+.wizard ul li.active.focus.pressed:not(.disabled) a:focus,
+.wizard ul li.visited.pressed a,
+.wizard ul li.visited.pressed a:focus {
+  pointer-events: none;
+  z-index: 8;
+  color: #282828;
+}
+.wizard ul li.normal.pressed a,
+.wizard ul li.normal.pressed a:focus,
+.wizard ul li.normal.focus.pressed a,
+.wizard ul li.normal.focus.pressed a:focus,
+.wizard ul li.active.pressed a,
+.wizard ul li.active.pressed a:focus,
+.wizard ul li.active.focus.pressed:not(.disabled) a,
+.wizard ul li.active.focus.pressed:not(.disabled) a:focus,
+.wizard ul li.visited.pressed a,
+.wizard ul li.visited.pressed a:focus,
+.wizard ul li.normal.pressed a::before,
+.wizard ul li.normal.pressed a:focus::before,
+.wizard ul li.normal.focus.pressed a::before,
+.wizard ul li.normal.focus.pressed a:focus::before,
+.wizard ul li.active.pressed a::before,
+.wizard ul li.active.pressed a:focus::before,
+.wizard ul li.active.focus.pressed:not(.disabled) a::before,
+.wizard ul li.active.focus.pressed:not(.disabled) a:focus::before,
+.wizard ul li.visited.pressed a::before,
+.wizard ul li.visited.pressed a:focus::before,
+.wizard ul li.normal.pressed a::after,
+.wizard ul li.normal.pressed a:focus::after,
+.wizard ul li.normal.focus.pressed a::after,
+.wizard ul li.normal.focus.pressed a:focus::after,
+.wizard ul li.active.pressed a::after,
+.wizard ul li.active.pressed a:focus::after,
+.wizard ul li.active.focus.pressed:not(.disabled) a::after,
+.wizard ul li.active.focus.pressed:not(.disabled) a:focus::after,
+.wizard ul li.visited.pressed a::after,
+.wizard ul li.visited.pressed a:focus::after,
+.wizard ul li.normal.pressed.first a:before,
+.wizard ul li.normal.pressed.first a:focus:before,
+.wizard ul li.normal.focus.pressed.first a:before,
+.wizard ul li.normal.focus.pressed.first a:focus:before,
+.wizard ul li.active.pressed.first a:before,
+.wizard ul li.active.pressed.first a:focus:before,
+.wizard ul li.active.focus.pressed.first:not(.disabled) a:before,
+.wizard ul li.active.focus.pressed.first:not(.disabled) a:focus:before,
+.wizard ul li.visited.pressed.first a:before,
+.wizard ul li.visited.pressed.first a:focus:before,
+.wizard ul li.normal.pressed.last a:after,
+.wizard ul li.normal.pressed.last a:focus:after,
+.wizard ul li.normal.focus.pressed.last a:after,
+.wizard ul li.normal.focus.pressed.last a:focus:after,
+.wizard ul li.active.pressed.last a:after,
+.wizard ul li.active.pressed.last a:focus:after,
+.wizard ul li.active.focus.pressed.last:not(.disabled) a:after,
+.wizard ul li.active.focus.pressed.last:not(.disabled) a:focus:after,
+.wizard ul li.visited.pressed.last a:after,
+.wizard ul li.visited.pressed.last a:focus:after {
+  background-position: 0 -120px;
+}
+/* Active */
+.wizard ul li.active {
+  /* /.wizard ul li.active a */
+  /* Active Focus */
+}
+.wizard ul li.active a {
+  z-index: 11;
+  color: #282828;
+}
+.wizard ul li.active a,
+.wizard ul li.active a::before,
+.wizard ul li.active a::after,
+.wizard ul li.active.first a::before,
+.wizard ul li.active.last a::after {
+  background-position: 0 -180px;
+}
+.wizard ul li.active:not(.disabled):not(.visited) a:focus,
+.wizard ul li.active.focus:not(.disabled):not(.visited) a {
+  z-index: 15;
+  outline: none;
+  color: #282828;
+}
+.wizard ul li.active:not(.disabled):not(.visited) a:focus,
+.wizard ul li.active.focus:not(.disabled):not(.visited) a,
+.wizard ul li.active:not(.disabled):not(.visited) a:focus::before,
+.wizard ul li.active.focus:not(.disabled):not(.visited) a::before,
+.wizard ul li.active:not(.disabled):not(.visited) a:focus::after,
+.wizard ul li.active.focus:not(.disabled):not(.visited) a::after,
+.wizard ul li.active.first.focus:not(.disabled):not(.visited) a::before,
+.wizard ul li.active.first:not(.disabled):not(.visited) a:focus::before,
+.wizard ul li.active.last.focus:not(.disabled):not(.visited) a::after,
+.wizard ul li.active.last:not(.disabled):not(.visited) a:focus::after {
+  background-position: 0 -360px;
+}
+/* /.wizard ul li.active */
+/* Visited */
+.wizard ul li.visited {
+  /* /.wizard ul li.visited a */
+}
+.wizard ul li.visited a {
+  color: #fff;
+}
+.wizard ul li.visited a:focus {
+  outline: 0px !important;
+}
+.wizard ul li.visited a,
+.wizard ul li.visited a::before,
+.wizard ul li.visited a::after,
+.wizard ul li.visited.first a::before,
+.wizard ul li.visited.last a::after {
+  background-position: 0 -540px;
+}
+/* /.wizard ul li.visited */
+/* Disabled */
+.wizard ul li.disabled {
+  /* /.wizard ul li.disabled a */
+  /* /.wizard ul li.disabled.last a:after */
+}
+.wizard ul li.disabled a {
+  cursor: default;
+  z-index: 7;
+  color: #a0a0a0;
+}
+.wizard ul li.disabled a:focus {
+  outline: none !important;
+}
+.wizard ul li.disabled a,
+.wizard ul li.disabled a::before,
+.wizard ul li.disabled a::after,
+.wizard ul li.disabled.first a::before,
+.wizard ul li.disabled.last a::after {
+  background-position: 0 -600px;
+}
+/* /.wizard ul li.disabled */
+/* Wizard primary */
+/* Active */
+.wizard-primary ul li.active {
+  /* /.wizard-primary ul li.active a */
+  /* Active Focus */
+}
+.wizard-primary ul li.active a {
+  color: #fff;
+}
+.wizard-primary ul li.active a,
+.wizard-primary ul li.active a::before,
+.wizard-primary ul li.active a::after,
+.wizard-primary ul li.active.first a::before,
+.wizard-primary ul li.active.last a::after {
+  background-position: right -240px;
+}
+.wizard-primary ul li.active:not(.disabled):not(.visited) a:focus,
+.wizard-primary ul li.active.focus:not(.disabled):not(.visited) a {
+  z-index: 15;
+  outline: none;
+  color: #fff;
+}
+.wizard-primary ul li.active:not(.disabled):not(.visited) a:focus,
+.wizard-primary ul li.active.focus:not(.disabled):not(.visited) a,
+.wizard-primary ul li.active:not(.disabled):not(.visited) a:focus::before,
+.wizard-primary ul li.active.focus:not(.disabled):not(.visited) a::before,
+.wizard-primary ul li.active:not(.disabled):not(.visited) a:focus::after,
+.wizard-primary ul li.active.focus:not(.disabled):not(.visited) a::after,
+.wizard-primary ul li.active.first.focus:not(.disabled):not(.visited) a::before,
+.wizard-primary ul li.active.first:not(.disabled):not(.visited) a:focus::before,
+.wizard-primary ul li.active.last.focus:not(.disabled):not(.visited) a::after,
+.wizard-primary ul li.active.last:not(.disabled):not(.visited) a:focus::after {
+  background-position: 0 -420px;
+}
+/* /.wizard-primary ul li.active */
+/* Wizard with icons */
+.wizard-icon > ul > li.visited > a > span,
+.wizard-icon > ul > li.active > a > span {
+  position: relative;
+  padding-right: 27px;
+}
+.wizard-icon > ul > li.visited > a > span:after,
+.wizard-icon > ul > li.active > a > span:after {
+  content: '';
+  background: url(../img/wizard/wizard-icons.png) no-repeat 0 3px transparent;
+  width: 24px;
+  height: 23px;
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+.wizard-icon > ul > li.visited.pressed > a > span:after {
+  background-position: 0 -28px;
+}
+.wizard-icon > ul > li.active > a > span:after {
+  background-position: 0 -104px;
+}
+.wizard-icon.wizard-primary > ul > li.active > a > span:after {
+  background-position: 0 -67px;
+}

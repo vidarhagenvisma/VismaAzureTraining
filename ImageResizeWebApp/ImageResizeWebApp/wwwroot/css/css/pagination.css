@@ -1,0 +1,239 @@
+/*
+ * Pagination / Pager - Nordic Cool 3.0
+ */
+.pagination {
+  clear: both;
+  /* /li */
+}
+.pagination > li {
+  display: block;
+  float: left;
+  margin-left: 4px;
+  /* /a.btn */
+}
+.pagination > li:first-child {
+  margin-left: 0;
+}
+.pagination > li.of > span {
+  padding: 5px 0px;
+  color: #737373;
+  border: none;
+  background: transparent;
+}
+.pagination > li > a,
+.pagination > li > a:hover {
+  cursor: default;
+  padding: 5px 0px 5px 10px;
+  border: none;
+  color: #282828;
+  background: transparent;
+}
+.pagination > li.of + li > a {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.pagination > li > a.btn {
+  min-width: 100%;
+  width: 32px;
+  height: 30px;
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: 3px;
+  *zoom: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d1d1d1 #c9c9c9 #a5a5a5;
+  background: #fefefe;
+  background: -webkit-linear-gradient(top, #fefefe 0%, #f7f7f7 50%, #efefef 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #f7f7f7 50%, #efefef 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+.pagination > li > a.btn:hover {
+  background: #e7f5fe;
+  background: -webkit-linear-gradient(top, #e7f5fe 0%, #e4f2fa 50%, #d9e6ee 100%);
+  background: linear-gradient(to bottom, #e7f5fe 0%, #e4f2fa 50%, #d9e6ee 100%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.pagination > li > a.btn:focus {
+  outline: none;
+  border-color: #0089d9;
+  background: #fefefe;
+  background: -webkit-linear-gradient(top, #fefefe 0%, #f7f7f7 50%, #efefef 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #f7f7f7 50%, #efefef 100%);
+  box-shadow: -1px -1px 0 #0089d9 inset, 1px 1px 0 #0089d9 inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.pagination > li > a.btn:active {
+  outline: none;
+  border-color: #b1b1b1 #c6c6c6 #d5d5d5;
+  background: #d9d9d9;
+  background: -webkit-linear-gradient(top, #d9d9d9 0%, #d9d9d9 4%, #e0e0e0 100%);
+  background: linear-gradient(to bottom, #d9d9d9 0%, #d9d9d9 4%, #e0e0e0 100%);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+.pagination > li > a.btn span {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 8px;
+  height: 12px;
+  text-indent: -9999px;
+  background: url(../img/pagination-carets.svg) no-repeat scroll 0px 0px transparent;
+}
+.pagination > li > a.btn.prev span {
+  right: 11px;
+  background-position: 0px -36px;
+}
+.pagination > li > a.btn.next span {
+  right: 10px;
+  background-position: -18px -36px;
+}
+.pagination > li > a.btn.go2first span {
+  background-position: 0px 0px;
+}
+.pagination > li > a.btn.go2last span {
+  right: 10px;
+  background-position: -18px 0px;
+}
+.pagination > li > a.disabled,
+.pagination > li > a.disabled:hover,
+.pagination > li > a.disabled:active,
+.pagination > li > a.disabled:focus {
+  opacity: 1;
+  border-width: 1px !important;
+  border-color: #e5e5e5 !important;
+  color: #a0a0a0;
+  background: #ebebeb;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+.pagination > li > a.disabled.go2first span,
+.pagination > li > a.disabled:hover.go2first span,
+.pagination > li > a.disabled:active.go2first span,
+.pagination > li > a.disabled:focus.go2first span {
+  background-position: 0 -18px;
+}
+.pagination > li > a.disabled.go2last span,
+.pagination > li > a.disabled:hover.go2last span,
+.pagination > li > a.disabled:active.go2last span,
+.pagination > li > a.disabled:focus.go2last span {
+  background-position: -18px -18px;
+}
+.pagination > li > a.disabled.prev span,
+.pagination > li > a.disabled:hover.prev span,
+.pagination > li > a.disabled:active.prev span,
+.pagination > li > a.disabled:focus.prev span,
+.pagination > li > a.disabled.next span,
+.pagination > li > a.disabled:hover.next span,
+.pagination > li > a.disabled:active.next span,
+.pagination > li > a.disabled:focus.next span {
+  opacity: 0.7;
+}
+/* /.pagination */
+.pagination.pagination-lg > li > a,
+.pagination.pagination-lg > li.of > span {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 120%;
+}
+.pagination.pagination-lg > li > a.btn {
+  width: 50px;
+  height: 48px;
+  padding: 7px 10px;
+}
+.pagination.pagination-lg > li > a.btn span {
+  top: 17px;
+  right: 19px;
+}
+.pagination > li.disabled > a,
+.pagination > li.disabled > a:hover,
+.pagination > li.disabled > span:hover,
+.pager > li.disabled > a,
+.pager > li.disabled > span,
+.pager > li.disabled > a:hover,
+.pager > li.disabled > span:hover {
+  cursor: default;
+}
+.pager > li > a,
+.pager > li > span,
+.pager > li > a:hover,
+.pager > li > span:hover,
+.pager > li > a:focus,
+.pager > li > span:focus {
+  overflow: hidden;
+  width: 38px;
+  height: 38px;
+  padding: 6px 10px;
+  text-indent: -9999px;
+  outline: none;
+  border: 2px solid transparent;
+  background: url(../img/pager-carets.svg) no-repeat transparent;
+  border-radius: 2px;
+}
+.pager > li:first-child > a,
+.pager > li:first-child > span {
+  background-position: 11px 6px;
+}
+.pager > li:last-child > a,
+.pager > li:last-child > span {
+  background-position: -21px 6px;
+}
+.pager > li:first-child > a:hover,
+.pager > li:first-child > span:hover {
+  background-position: 11px -58px;
+}
+.pager > li:last-child > a:hover,
+.pager > li:last-child > span:hover {
+  background-position: -21px -58px;
+}
+.pager > li:first-child > a:focus,
+.pager > li:first-child > span:focus,
+.pager > li:first-child > a.focus,
+.pager > li:first-child > span.focus {
+  border: 2px solid #0089d9;
+  background-position: 11px 6px;
+}
+.pager > li:last-child > a:focus,
+.pager > li:last-child > span:focus {
+  border: 2px solid #0089d9;
+  background-position: -21px 6px;
+}
+.pager > li:first-child > a:active,
+.pager > li:first-child > span:active {
+  border: 2px solid transparent;
+  background-position: 11px -90px;
+}
+.pager > li:last-child > a:active,
+.pager > li:last-child > span:active {
+  border: 2px solid transparent;
+  background-position: -21px -90px;
+}
+.pager > li.disabled:first-child > a,
+.pager > li.disabled:first-child > span,
+.pager > li.disabled:first-child > a:hover,
+.pager > li.disabled:first-child > span:hover,
+.pager > li.disabled:first-child > a:focus,
+.pager > li.disabled:first-child > span:focus,
+.pager > li.disabled:first-child > a:active,
+.pager > li.disabled:first-child > span:active {
+  opacity: 0.7;
+  border: 2px solid transparent;
+  background-position: 11px 6px;
+  background-color: transparent;
+}
+.pager > li.disabled:last-child > a,
+.pager > li.disabled:last-child > span,
+.pager > li.disabled:last-child > a:hover,
+.pager > li.disabled:last-child > span:hover,
+.pager > li.disabled:last-child > a:focus,
+.pager > li.disabled:last-child > span:focus,
+.pager > li.disabled:last-child > a:active,
+.pager > li.disabled:last-child > span:active {
+  opacity: 0.55;
+  border: 2px solid transparent;
+  background-position: -21px 6px;
+  background-color: transparent;
+}

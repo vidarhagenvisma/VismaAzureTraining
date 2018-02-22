@@ -1,0 +1,89 @@
+/**
+ * Alert styles - Nordic Cool 3.0
+*/
+.alert {
+  position: relative;
+  min-height: 90px;
+  margin-bottom: 20px;
+  padding: 20px 40px 20px 90px;
+  border-width: 1px;
+  border-color: #f0f0f0 #e9e9e9 #dedede;
+  border-radius: 0;
+  background: #fff;
+  color: #282828;
+  line-height: 50px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  /* /.alert > div */
+  /* /.alert.alert-options */
+  /* /.alert.alert-sm */
+}
+.alert > div {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.alert > div > *:last-child {
+  margin-bottom: 0;
+}
+.alert h1,
+.alert h2,
+.alert h3,
+.alert h4,
+.alert .h1,
+.alert .h2,
+.alert .h3,
+.alert .h4 {
+  margin: 0px 0 5px;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.alert p {
+  color: #787878;
+}
+.alert p .btn {
+  margin: 10px 0 5px 0;
+}
+.alert a,
+.alert .alert-link {
+  color: #0974b3;
+  font-weight: normal;
+}
+.alert .vismaicon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.alert .close {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.alert.alert-options {
+  padding-left: 130px;
+}
+.alert.alert-options .vismaicon {
+  left: 40px;
+}
+.alert.alert-dismissible {
+  padding-right: 50px;
+}
+.alert.alert-sm {
+  min-height: 42px;
+  padding: 12px 30px 12px 55px;
+  line-height: 18px;
+}
+.alert.alert-sm .vismaicon {
+  left: 10px;
+}
+/* /.alert */

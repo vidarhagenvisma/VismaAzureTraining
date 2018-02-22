@@ -1,0 +1,131 @@
+/**
+ * Popover styles - Nordic Cool 3.0
+*/
+.popover {
+  min-width: 370px;
+  padding: 0;
+  background-color: #fffaf2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f6dba6 #fddfa7 #f1c575;
+  font-family: 'Open Sans', 'OpenSansFallback', sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+}
+.popover-title {
+  color: #0974b3;
+  padding: 12px 20px 12px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 0;
+}
+.popover-content {
+  padding: 12px 20px 20px 20px;
+  line-height: 20px;
+}
+.popover-content h4 {
+  margin: 0 0 5px 0;
+  color: #323232;
+  font-size: 14px;
+}
+.popover-content p {
+  margin-bottom: 15px;
+}
+.popover-content *:last-child {
+  margin-bottom: 0;
+}
+.popover-content .form-group {
+  margin-bottom: 6px;
+}
+.popover-content .form-group textarea {
+  min-height: 95px;
+}
+.popover-footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 11px 20px;
+  text-align: right;
+}
+.popover.top > .arrow:after,
+.popover.bottom > .arrow:after {
+  margin-left: -7px;
+}
+.popover.top > .arrow:after {
+  border-top-color: #fffaf2;
+  bottom: 2px;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: #fffaf2;
+  top: 2px;
+}
+.popover.left > .arrow:after {
+  border-left-color: #fffaf2;
+  bottom: -7px;
+  right: 2px;
+}
+.popover.right > .arrow:after {
+  border-right-color: #fffaf2;
+  bottom: -7px;
+  left: 2px;
+}
+.popover > .arrow:after {
+  border-width: 7px;
+}
+.popover > .arrow {
+  border-width: 7px;
+}
+.popover.top > .arrow {
+  bottom: -8px;
+  border-top-color: #f1c575;
+}
+button + .popover.left > .arrow,
+a + .popover.left > .arrow {
+  top: 29px !important;
+  right: -7px;
+  border-left-color: rgba(0, 0, 0, 0.1);
+}
+.popover.left > .arrow {
+  top: 24px;
+  right: -7px;
+  margin-top: -7px;
+  border-left-color: #fddfa7;
+}
+button + .popover.right > .arrow,
+a + .popover.right > .arrow {
+  top: 29px !important;
+  left: -7px;
+  border-right-color: rgba(0, 0, 0, 0.07);
+}
+.popover.right > .arrow {
+  left: -7px;
+  margin-top: -7px;
+  top: 24px;
+  border-right-color: #fddfa7;
+}
+.popover.bottom > .arrow {
+  top: -7px;
+  border-bottom-color: #f6dba6;
+}
+.btn-lg + .popover.left,
+.btn-lg + .popover.right {
+  margin-top: 12px;
+}
+.btn-lg + .popover.left > .arrow,
+.btn-lg + .popover.right > .arrow {
+  top: 25px !important;
+}
+/* IE */
+.ie10 .btn-lg + .popover.left,
+.ie10 .btn-lg + .popover.right,
+.ie11 .btn-lg + .popover.left,
+.ie11 .btn-lg + .popover.right {
+  margin-top: 36px;
+}
+@supports (-ms-ime-align:auto) {
+  .btn-lg + .popover.left,
+  .btn-lg + .popover.right {
+    margin-top: 36px;
+  }
+}

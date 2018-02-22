@@ -1,0 +1,128 @@
+/*
+ * Badges / Labels - Nordic Cool 3.0
+ */
+.badge,
+.label {
+  display: inline-block;
+  min-width: 22px;
+  height: 19px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 13px;
+  text-align: center;
+  text-indent: 0px;
+  vertical-align: sub;
+  color: #fff;
+  background: #4d8400;
+  border: 1px solid transparent;
+}
+.label {
+  padding: 0.1em 0.7em 0.2em;
+}
+.label.label-secondary {
+  padding: 0.2em 0.7em;
+}
+.label.label-primary {
+  padding: 0.2em 0.7em;
+}
+.badge {
+  padding: 0.15em 0.4em 0.2em;
+}
+.badge.badge-primary {
+  padding: 0.25em 0.4em 0.2em;
+}
+.badge.badge-secondary {
+  padding: 0.25em 0.4em 0.2em;
+}
+.badge-primary,
+.label-primary {
+  border: 0px;
+  color: #282828;
+  background: #fff;
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.12), -1px 0 0 rgba(0, 0, 0, 0.12), 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.badge-secondary,
+.label-secondary {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #C72828;
+  height: 21px;
+}
+.badge.badge-sm {
+  min-width: 22px;
+  height: 15px;
+  padding: 0.1em 0.4em 0.1em;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+}
+.badge.badge-sm.badge-primary {
+  padding: 0.2em 0.4em 0.1em;
+}
+h1 .label,
+h1 .badge {
+  position: relative;
+  top: -7px;
+  padding-top: 0.1em;
+}
+h2 .label,
+h2 .badge {
+  position: relative;
+  top: -6px;
+  padding-top: 0.07em;
+}
+h3 .label,
+h3 .badge {
+  position: relative;
+  top: -4px;
+  padding-top: 0.1em;
+}
+a > .badge {
+  position: relative;
+  top: -4px;
+  margin-left: 5px;
+  padding: 0.2em 0.4em;
+}
+a > .label {
+  margin-left: 5px;
+  padding: 2px 7px;
+}
+.btn-default .badge {
+  top: -3px;
+  padding: 0.2em 0.4em;
+}
+.btn-default .label {
+  top: -4px;
+  padding: 0.1em 0.7em 0.2em;
+}
+.btn-primary .badge {
+  top: -4px;
+  padding: 0.2em 0.4em;
+}
+.btn-primary .label {
+  top: -4px;
+  padding: 0.2em 0.7em;
+}
+.btn-primary .badge,
+.btn-primary .label {
+  border: 0px;
+  color: #282828;
+  background: #fff;
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.12), -1px 0 0 rgba(0, 0, 0, 0.12), 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.btn-default .badge,
+.btn-default .label {
+  color: #fff;
+  background: #4d8400;
+  border: 1px solid transparent;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .badge.badge-default:not(.badge-sm) {
+    padding: 0.2em 0.4em 0.2em;
+  }
+  .btn-primary .badge {
+    padding: .25em .4em .2em .4em;
+  }
+}
+/* only Chrome */

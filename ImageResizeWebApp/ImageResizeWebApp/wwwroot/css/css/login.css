@@ -1,0 +1,293 @@
+/* Login page - NC3 */
+@font-face {
+  font-family: 'pf_beausans_proxthin';
+  src: url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-XThin.eot?#iefix") format("embedded-opentype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-XThin.woff") format("woff"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-XThin.ttf") format("truetype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-XThin.svg#PFBeauSansPro-XThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pf_beausans_prothin';
+  src: url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Thin.eot?#iefix") format("embedded-opentype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Thin.woff") format("woff"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Thin.ttf") format("truetype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Thin.svg#PFBeauSansPro-Thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pf_beausans_regular';
+  src: url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Regular.woff") format("woff"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Regular.ttf") format("truetype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-Regular.svg#PFBeauSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pf_beausans_bold';
+  src: url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-SemiBold.woff") format("woff"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-SemiBold.ttf") format("truetype"), url("https://font.visma.com/Fonts/PFBeauSansPro/PFBeauSansPro-SemiBold.svg#PFBeauSansPro-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.login-page {
+  background: url(../img/login_imgs/login-new-bk.jpg) center center no-repeat transparent;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+.login-page .app-footer {
+  display: none;
+}
+.login-page .alert {
+  background: rgba(255, 255, 255, 0.65);
+  min-height: 1%;
+  border-width: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  line-height: 1.45;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.07);
+}
+.login-page .alert .vismaicon {
+  margin-left: -45px;
+  left: auto;
+}
+.login-page .alert .btn {
+  min-width: 1%;
+  margin: 0 7px;
+}
+.login-page .alert.login-footer-alert {
+  bottom: 0;
+  top: auto;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.07);
+}
+.login-page .alert.login-footer-alert ul {
+  float: right;
+  list-style: none;
+  padding: 0 3%;
+}
+.login-page .alert.login-footer-alert ul > li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.login-page .alert.login-footer-alert ul > li > a {
+  text-decoration: none;
+}
+.login-page .alert.login-footer-alert ul > li > a:hover {
+  text-decoration: underline;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown > a.dropdown-toggle {
+  background: url(../img/login_imgs/flags.png) no-repeat 0px 5px transparent;
+  padding-left: 20px;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a {
+  background-image: url(../img/login_imgs/flags.png);
+  background-repeat: no-repeat;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a.en {
+  background-position: 16px 9px;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a.sw {
+  background-position: 16px -21px;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a.no {
+  background-position: 16px -51px;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a.dk {
+  background-position: 16px -81px;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a.fi {
+  background-position: 16px -111px;
+}
+.login-page .alert.login-footer-alert ul > li.language-dropdown .dropdown-menu li > a:hover {
+  text-decoration: none;
+}
+.login-page .alert.login-footer-alert .dropdown-menu {
+  border-color: rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.95);
+  margin-bottom: 30px;
+  padding: 10px 0 8px;
+  left: -15px;
+  -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.07);
+}
+.login-page .alert.login-footer-alert .dropdown-menu:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent;
+  bottom: -8px;
+  left: 40%;
+}
+.login-page .alert.login-footer-alert .dropdown-menu > li {
+  float: none;
+  padding: 0;
+  display: block;
+}
+.login-page .alert.login-footer-alert .dropdown-menu > li > a {
+  display: block;
+  padding-left: 45px;
+}
+.login-page .alert.login-footer-alert .dropdown-menu > li > a.active {
+  position: relative;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.login-page .alert.login-footer-alert .dropdown-menu > li > a.active:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 18px;
+  background: url(../img/login_imgs/check-mark.png) center center no-repeat transparent;
+  top: 9px;
+}
+.login-page .alert.login-footer-alert .dropdown-menu > li > a.active:hover {
+  background-color: #CCEBFF;
+}
+.login-box {
+  max-width: 490px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 81, 128, 0.05);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 81, 128, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 81, 128, 0.08);
+  top: 12%;
+  position: relative;
+}
+.login-box .login-header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 26px 30px 14px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.login-box .login-header h1 {
+  font-family: 'pf_beausans_prothin';
+  background: -webkit-linear-gradient(#048bd9, #2ca4e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  color: #048bd9;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.login-box .login-header h1 small {
+  font-size: 24px;
+}
+.login-box .login-header:after {
+  content: '';
+  background: #fefefe;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 15%, rgba(0, 0, 0, 0.05) 85%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 15%, rgba(0, 0, 0, 0.05) 85%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.2);
+}
+.login-box .login-content {
+  background: #fff;
+  padding: 30px 40px 20px;
+}
+.login-box .login-content .btn {
+  width: 100%;
+}
+.login-box .login-content .login-error {
+  max-width: 100%;
+  padding: 0 0 0 33px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.login-box .login-content .login-error .vismaicon {
+  margin: 0;
+  left: 0;
+}
+.login-box .login-footer {
+  background: #fff;
+  position: relative;
+}
+.login-box .login-footer .logo-footer {
+  background: url(../img/visma-logo.svg) no-repeat center center transparent;
+  display: block;
+  text-indent: -9999px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.login-box .login-footer:before {
+  content: '';
+  background: #fefefe;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #e1e5e7 15%, #e1e5e7 85%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e1e5e7 15%, #e1e5e7 85%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+}
+.form-horizontal .alert {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #c72828;
+  display: block;
+  float: none;
+  margin: 0 auto 20px;
+  max-width: 80%;
+  padding-right: 0;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .login-box {
+    max-width: 95%;
+  }
+  .login-page .alert.login-footer-alert {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .login-page .alert.login-footer-alert > ul {
+    margin: 0 auto;
+    float: none;
+  }
+  .form-horizontal .alert {
+    max-width: 100%;
+    text-align: left;
+  }
+  .form-horizontal .alert .vismaicon {
+    left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .login-page {
+    background-size: inherit;
+  }
+  .login-page .alert {
+    padding-left: 60px;
+    padding-right: 45px;
+    position: relative;
+    top: -90px;
+  }
+  .login-page .alert.login-footer-alert {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .login-box {
+    top: -12%;
+  }
+  .form-horizontal .alert {
+    position: relative;
+    top: auto;
+    padding-left: 40px;
+  }
+  .login-page .alert.login-footer-alert > ul {
+    float: none;
+  }
+}
