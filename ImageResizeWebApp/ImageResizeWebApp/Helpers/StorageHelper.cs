@@ -27,7 +27,7 @@ namespace ImageResizeWebApp.Helpers
             return formats.Any(item => file.FileName.EndsWith(item, StringComparison.OrdinalIgnoreCase));
         }
 
-        public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureConfig _storageConfig)
+        public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureConfig _storageConfig, string IP, string SqlConnection)
         {
             // Create storagecredentials object by reading the values from the configuration (appsettings.json)
             StorageCredentials storageCredentials = new StorageCredentials(_storageConfig.AccountName, _storageConfig.AccountKey);
@@ -46,6 +46,14 @@ namespace ImageResizeWebApp.Helpers
 
             // Upload the file
             await blockBlob.UploadFromStreamAsync(fileStream);
+
+
+
+
+            // Log
+            UploadHistoryHelper h = new UploadHistoryHelper();
+            h.Insert(blockBlob.Uri.AbsoluteUri, IP, SqlConnection);
+
 
             return await Task.FromResult(true);
         }

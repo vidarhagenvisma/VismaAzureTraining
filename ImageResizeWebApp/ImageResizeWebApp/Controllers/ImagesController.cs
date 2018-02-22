@@ -15,6 +15,7 @@ using System.Net.Http;
 using Microsoft.AspNetCore.Http;
 using ImageResizeWebApp.Helpers;
 
+
 namespace ImageResizeWebApp.Controllers
 {
     [Route("api/[controller]")]
@@ -22,16 +23,22 @@ namespace ImageResizeWebApp.Controllers
     {
         // make sure that appsettings.json is filled with the necessary details of the azure storage
         private readonly AzureConfig storageConfig = null;
+        private readonly ConnectionStrings sqlConfig=null;
 
-        public ImagesController(IOptions<AzureConfig> config)
+        public ImagesController(IOptions<AzureConfig> config, IOptions<ConnectionStrings> sqlCfg)
         {
             storageConfig = config.Value;
+            sqlConfig = sqlCfg.Value;
+
         }
+
+
 
         // POST /api/images/upload
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload(ICollection<IFormFile> files)
         {
+            string ip = HttpContext.Connection.LocalIpAddress.ToString();
             bool isUploaded = false;
 
             try
@@ -57,7 +64,7 @@ namespace ImageResizeWebApp.Controllers
                         {
                             using (Stream stream = formFile.OpenReadStream())
                             {
-                                isUploaded = await StorageHelper.UploadFileToStorage(stream, formFile.FileName, storageConfig);
+                                isUploaded = await StorageHelper.UploadFileToStorage(stream, formFile.FileName, storageConfig, ip, sqlConfig.SQLConnectionString);
                             }
                         }
                     }
