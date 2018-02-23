@@ -38,7 +38,7 @@ namespace ImageResizeWebApp.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload(ICollection<IFormFile> files)
         {
-            string ip = HttpContext.Connection.LocalIpAddress.ToString();
+            string ip = HttpContext.Connection.RemoteIpAddress.ToString();
             bool isUploaded = false;
 
             try
