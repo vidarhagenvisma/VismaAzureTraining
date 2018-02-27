@@ -1,51 +1,49 @@
 ﻿@model IEnumerable<ImageResizeWebApp.Models.UploadHistory>
-
 @{
     Layout = "_Layout";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-
-<table class="table">
-    <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.URL)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.IP)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.date)
-                </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.URL)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.date)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
-</body>
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.URL)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.IP)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.date)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.URL)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.IP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.date)
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
 </html>
