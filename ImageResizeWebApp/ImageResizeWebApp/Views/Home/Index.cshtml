@@ -21,7 +21,8 @@
 
     .blueimp-gallery {
         margin: 25px;
-        max-width: 150px;
+        max-width: 700px;
+        height: 500px;
         padding-bottom: 150px;
     }
 
@@ -30,7 +31,7 @@
         background: #F0F8FF;
         margin: 25px;
         border-radius: 5px;
-        max-width: 400px;
+        max-width: 700px;
     }
 
     .dropzone .dz-message {
@@ -52,7 +53,7 @@
 <main>
     
     <div class="box content">
-        Upload photos
+        Upload Images
         <div>
             <form action="/api/images/upload"
                   class="dropzone needsclick dz-clickable"
@@ -67,8 +68,7 @@
                 </div>
             </form>
         </div>
-        Generated Thumbnails
-        <p><span id="gallery-note">Gallery refreshes from storage container image links every 5 seconds.</span></p>
+        Uploaded images
         <div id="stored-images"></div>
 
         <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
@@ -84,9 +84,7 @@
     <div class="box footer">
         <hr>
         <div class="privacy">
-            <p><span id="gallery-note"><I>
-        This app has no official privacy policy. Your data will be uploaded to a service in order produce a picture.<br />
-        Your images will be public once you upload them and there is no automated way to remove them.</I></span>
+            <p><span id="gallery-note"><I>Please note: Your images will be public once you upload them and there is no automated way to remove them.</I></span>
 </p>
         </div>
     </div>
