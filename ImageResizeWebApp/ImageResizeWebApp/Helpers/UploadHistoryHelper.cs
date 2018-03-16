@@ -17,25 +17,33 @@ namespace ImageResizeWebApp.Helpers
     public class UploadHistoryHelper
     {
 
-       
+
         public void Insert(string url, string IP, string SQLConnection)
         {
 
 
-                var sql = "INSERT INTO uploadHistory (url, ip) VALUES(@url, @ip)";
 
+            try
+            {
+                var sql = "INSERT INTO uploadHistory (url, ip) VALUES(@url, @ip)";
                 using (SqlConnection cn = new SqlConnection(SQLConnection))
-                    using(SqlCommand cmd = new SqlCommand(sql,cn))
-                    {
-                    cmd.Parameters.Add("@url", System.Data.SqlDbType.NVarChar,500).Value=  url;
-                    cmd.Parameters.Add("@ip", System.Data.SqlDbType.NVarChar,30).Value= IP;
+                using (SqlCommand cmd = new SqlCommand(sql, cn))
+                {
+                    cmd.Parameters.Add("@url", System.Data.SqlDbType.NVarChar, 500).Value = url;
+                    cmd.Parameters.Add("@ip", System.Data.SqlDbType.NVarChar, 30).Value = IP;
 
                     cn.Open();
                     cmd.ExecuteNonQuery();
                     cn.Close();
                 }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
         }
-
     }
+
+}
 }
