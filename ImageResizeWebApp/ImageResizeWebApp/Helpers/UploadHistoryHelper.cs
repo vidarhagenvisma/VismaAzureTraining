@@ -46,5 +46,3 @@ namespace ImageResizeWebApp.Helpers
     }
 
 }
-
-
